@@ -31,7 +31,7 @@ class LinebotController < ApplicationController
         when Line::Bot::Event::MessageType::Text
           message = {
             type: 'text',  
-            text: 'ok' #送られた内容をそのまま返す
+            text: 'ok' #返信内容
           }
           # 応答メッセージを送る
           client.reply_message(event['replyToken'], message)
