@@ -39,5 +39,3 @@ gem 'line-bot-api'
 gem 'dotenv-rails'
 gem 'whenever', require: false
 gem 'rake'
-gem 'sinatra'
-gem 'sinatra-contrib'
