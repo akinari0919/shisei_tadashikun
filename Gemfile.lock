@@ -107,6 +107,8 @@ GEM
       minitest (>= 5.0)
       ruby-progressbar
     multi_json (1.15.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     nenv (0.3.0)
     nio4r (2.5.8)
     nokogiri (1.12.4)
@@ -124,6 +126,8 @@ GEM
     puma (3.9.1)
     racc (1.5.2)
     rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.1.6)
@@ -158,6 +162,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     ruby-progressbar (1.11.0)
+    ruby2_keywords (0.0.5)
     ruby_dep (1.5.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -171,6 +176,17 @@ GEM
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
     shellany (0.0.1)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
+    sinatra-contrib (2.1.0)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.1.0)
+      sinatra (= 2.1.0)
+      tilt (~> 2.0)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -225,7 +241,10 @@ DEPENDENCIES
   puma (= 3.9.1)
   rails (= 5.1.6)
   rails-controller-testing (= 1.0.2)
+  rake
   sass-rails (= 5.0.6)
+  sinatra
+  sinatra-contrib
   spring (= 2.0.2)
   spring-watcher-listen (= 2.0.1)
   sqlite3 (= 1.3.13)
